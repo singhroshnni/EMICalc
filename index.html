@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMI Calculator</title>
+    <link rel="stylesheet" href="css/imdex.css">
+</head>
+<body>
+    <div class="container">
+        <h1>EMI Calculator</h1>
+        <form id="emiForm">
+            <div class="form-group">
+                <label for="principal">Principal Amount:</label>
+                <input type="number" id="principal" required>
+            </div>
+            <div class="form-group">
+                <label for="rate">Annual Interest Rate (%):</label>
+                <input type="number" id="rate" step="0.01" required>
+            </div>
+            <div class="form-group">
+                <label for="time">Loan Tenure (months):</label>
+                <input type="number" id="month" required>
+            </div>
+            <button type="button" onclick="calculateEMI()">Calculate EMI</button>
+        </form>
+        <div id="result">
+            <p id="emi"></p>
+            <p id="totalInterest"></p>
+            <p id="totalPayment"></p>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1>Monetization Table</h1>
+        <table id="monetizationTable">
+            <thead>
+                <tr>
+                    <th>Month</th>
+                    <th>Principal Payment</th>
+                    <th>Interest Payment</th>
+                    <th>Total Payment</th>
+                    <th>Remaining Principal</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Table rows will be inserted here by JavaScript -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
