@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #eff5f4;
-    margin: 0;
+    margin: 0 auto;
     padding: 20px;
 }
 
@@ -16,7 +16,7 @@ body {
 
 h1 {
     text-align: center;
-    color: #333;
+    color: #355;
 }
 
 .form-group {
@@ -25,7 +25,7 @@ h1 {
 
 label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
     color: #333;
 }
 
@@ -66,7 +66,7 @@ table {
 th, td {
     padding: 10px;
     border: 1px solid #ddd;
-    text-align: right;
+    text-align: center;
 }
 
 th {
